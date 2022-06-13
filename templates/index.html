@@ -2,7 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+      <link rel="stylesheet" type="text/css" href="/static/css/speech-input.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
       body {
         background-color:antiquewhite;
@@ -17,10 +23,15 @@
         <p class="botText"><span>Hi! I'm Chatterbot.</span></p>
       </div>
       <div id="userInput">
-        <input id="textInput" type="text" name="msg" placeholder="Enter Message here">
+
+          <input id="textInput" class="speech-input" type="text" name="msg"  placeholder="Enter Message here" />
+
+<!--        <input id="textInput" type="text" name="msg" value={{ data }} placeholder="Enter Message here" />-->
+<!--   <a href="/speechreg"> <i class="fa fa-microphone"></i></a>-->
         <input id="buttonInput" type="submit" value="Send">
       </div>
       <script src="/static/js/main.js"></script>
+        <script src="/static/js/speech-input.js"></script>
     </div>
   </body>
 </html>
